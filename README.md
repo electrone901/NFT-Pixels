@@ -1,38 +1,48 @@
-# Hello World Scilla Front-End
+# NFT Pixels
 
 ## About
 
-This repo contains the front-end code for interacting with the hello-world scilla contract. This example allows the contract owner to set the welcome msg using the setHello transition which can then be retrieved by anyone using getHello transition. You need to have [zilpay](https://zilpay.xyz) installed in order to play with this example. 
+NFT Pixels is a social dApp build for anyone who loves painting, design, and drawing.
 
-The Js-framework used in this example is React but the zilliqa related code is written in VanillaJS and can be used as such with another framework like Angular, Vue etc.
+NFT Pixels is an NFT platform where creators and makers can sell their NFTs, as well as create them within our simple online pixel art editor.
 
-## Setup
+Whenever a viewer goes to the app he-she will be able to check NFTs works from the different creators, see details from specific NFT and mint them.
 
+[Home Page](https://6119c859fed150c8471f90fd--petgrams.netlify.app/)
+
+Overall, users will be able to:
+- Check work from different artist
+- Create your own NFT and share it with your friends
+- Mint NFts
+- Connect your ZilPay wallet
+- Approve traaction to save your NFTs to chain
+- Upload and save your NFTs to NFT.Storage IPFS
+- Post comments
+
+ ![Main Page](https://raw.githubusercontent.com/electrone901/petgram/main/src/images/cover.png)
+
+# How it's made
+NFT Pixels dApp makes use of the following softwares:
+* Deployed smart contracts on the `ide.zilliqa`  test network. Link: https://ide.zilliqa.com/
+* Upload and store files to `IPFS NFTStorage` [IPFS](https://nft.storage/) platform.
+* Build a simple `Scilla ` smart contract.
+* `Zilliqa-js` to interact with the Zilliqa network nodes, to deploy contracts and invoke transitions
+* `OpenZeppelin` Library to customize smart contract
+* `html2canvas` to save to canvas and convert canvas to JPG
+* Build and use `React Js` to create components for single-page applications.
+* `Material-UI` to build faster, beautiful, and more accessible React applications.
+* `Font Awesome` For icons and buttons
+
+
+## Demo
+- [Home Page](https://6119c859fed150c8471f90fd--petgrams.netlify.app/)
+  ![Main Page](https://raw.githubusercontent.com/electrone901/petgram/main/src/images/cover.png) <br> <br>
+
+
+# Getting Started
 ```
-git clone https://github.com/arnavvohra/dev-portal-examples.git
-cd dev-portal-examples/hello-world
+git clone https://github.com
+cd into the project
 npm install
 npm start
 ```
-## Steps To Use The Demo
-
-
-1. Connect zilpay
-
-<img src = "src/images/connect-zilpay.png">
-
-2. Update contract address to your Hello World contract address
-
-<img src = "src/images/update-address.png">
-
-3. Set Welcome Msg by calling Set Hello
-
-<img src = "src/images/set-hello.png">
-
-4. Retrieve Welcome Msg by calling Get Hello
-
-<img src = "src/images/get-hello.png">
-
-5. The Welcome Msg gets updated!
-
-<img src = "src/images/current-msg.png">
