@@ -8,6 +8,12 @@ NFT Pixels is an NFT platform where creators and makers can sell their NFTs, as 
 
 Whenever a viewer goes to the app he-she will be able to check NFTs works from the different creators, see details from specific NFT and mint them.
 
+# Video Demo Walkthrough
+https://www.youtube.com/watch?v=WimXwuAgioY
+
+
+
+# App Features
 [Home Page](https://6119c859fed150c8471f90fd/)
  ![Main Page](https://raw.githubusercontent.com/electrone901/NFT-Pixels/main/src/images/create.png)
 
@@ -23,6 +29,7 @@ Overall, users will be able to:
  ![Main Page](https://raw.githubusercontent.com/electrone901/NFT-Pixels/main/src/images/home.png)
 
  ![Main Page](https://raw.githubusercontent.com/electrone901/NFT-Pixels/main/src/images/details.png)
+
 
 
 # How it's made
