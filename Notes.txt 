@@ -1,0 +1,30 @@
+Challenge hackathon:
+https://gitcoin.co/issue/zilliqa/zilliqa/2717/100026479
+
+copy some text from this https://github.com/azizyano/NftMap/blob/master/src/App.js
+
+
+contract i need to sign in
+https://ide.zilliqa.com/#/
+
+
+Docs contract https://github.com/Zilliqa/ZRC/blob/master/zrcs/zrc-1.md
+
+
+React example https://github.com/cMikolai/react-pixel-art-maker/blob/master/src/App.js
+
+
+IPFS based url https://ipfs.io/ipfs/
+
+
+contract Address: 	zil1yrgxx9sr6g4rdkjrtvfllvyxes4y7dlpzlfkrd
+
+metadata
+metadata.data
+data.image
+
+IPFS based url https://ipfs.io/ipfs/
+plus
+data.image.href without ipfs://
+
+ipfs://bafybeialreomiaexhgs7r4vk6skxz2nkwiqrejlzooripdwtt27bqxr7my/51zmE3MxwLL.png
