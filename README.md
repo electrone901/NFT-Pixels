@@ -11,7 +11,8 @@ Whenever a viewer goes to the app he-she will be able to check NFTs works from t
 # Video Demo Walkthrough
 https://www.youtube.com/watch?v=WimXwuAgioY
 
-
+# Live Demo
+https://amazing-clarke-9e3eb1.netlify.app/
 
 # App Features
 [Home Page](https://6119c859fed150c8471f90fd/)
