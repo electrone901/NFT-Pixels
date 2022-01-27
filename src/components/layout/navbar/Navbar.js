@@ -18,14 +18,33 @@ import MoreIcon from '@material-ui/icons/MoreVert'
 import { StylesProvider } from '@material-ui/core/styles'
 import './Navbar.css'
 // import logo from '../../../images/logo.jpg'
+import UAuth from '@uauth/js'
 
 export const Navbar = withRouter(({ connectWallet, walletAddres }) => {
   const [anchorEl, setAnchorEl] = useState(null)
   const [account, setAccount] = useState(null)
+  const [udName, setUDName] = useState('')
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null)
 
   const isMenuOpen = Boolean(anchorEl)
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl)
+
+  const uauth = new UAuth({
+    clientID: 'F+MIZ/YHqCXdkqmsTJ1v3hfVrPUnbAjCXcTNCKE38fE=',
+    clientSecret: 'SQfnxRHmcfdEbUlRN2dCPMkFqKVjcpCbwTW+j6FY6Ro=',
+    redirectUri: 'https://nftpixels.netlify.app/callback',
+  })
+
+  const login = async () => {
+    try {
+      const authorization = await uauth.loginWithPopup()
+      console.log(authorization)
+      setUDName(authorization.idToken.sub)
+      console.log('authorization.idToken.sub', authorization.idToken.sub)
+    } catch (error) {
+      console.error(error)
+    }
+  }
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget)
@@ -100,6 +119,13 @@ export const Navbar = withRouter(({ connectWallet, walletAddres }) => {
       </MenuItem>
     </Menu>
   )
+  const logout = () => {
+    console.log('logging out!')
+    uauth.logout().catch((error) => {
+      console.error('profile error:', error)
+    })
+    setUDName('')
+  }
 
   const connectZilpay = async (e) => {
     e.preventDefault()
@@ -146,24 +172,23 @@ export const Navbar = withRouter(({ connectWallet, walletAddres }) => {
                 About
               </Button>
               {/* Add Account  */}
-              {account ? (
+              {udName ? (
                 <>
-                  <Button className="whiteLink">
-                    {account.substring(0, 8)}...{account.substring(32, 24)}
-                  </Button>
+                  <Button className="whiteLink">{udName}</Button>
                   <Button
                     variant="contained"
                     className="connected-btn"
                     endIcon={<VerifiedUserSharpIcon />}
+                    onClick={logout}
                   >
-                    Connected
+                    Logout
                   </Button>
                 </>
               ) : (
                 <Button
                   variant="contained"
                   className="connect-wallet-btn"
-                  onClick={connectZilpay}
+                  onClick={login}
                 >
                   Connect Wallet
                 </Button>

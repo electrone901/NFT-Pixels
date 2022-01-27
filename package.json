@@ -8,6 +8,7 @@
         "@fortawesome/react-fontawesome": "^0.1.16",
         "@material-ui/core": "^4.12.3",
         "@material-ui/icons": "^4.11.2",
+        "@uauth/js": "^0.7.9",
         "@zilliqa-js/zilliqa": "^0.10.1",
         "axios": "^0.23.0",
         "bn.js": "^5.1.2",
@@ -21,8 +22,8 @@
         "tslib": "^2.0.0"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
+        "start": "react-scripts --openssl-legacy-provider start",
+        "build": "react-scripts --openssl-legacy-provider build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },

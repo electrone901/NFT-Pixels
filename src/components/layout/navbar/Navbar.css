@@ -11,6 +11,11 @@
     text-transform: capitalize;
 }
 
+.MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #cd03fa;
+}
+
 .whiteLink:nth-last-of-type() {
     padding-right: 1rem;
 }
@@ -59,7 +64,7 @@
 }
 
 .connect-wallet-btn {
-    background-color: #06c2fbcc;
+    background-color: #61dafb;
     color: white;
     font-weight: 800;
     text-transform: none;
