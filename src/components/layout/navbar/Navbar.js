@@ -17,7 +17,6 @@ import NotificationsIcon from '@material-ui/icons/Notifications'
 import MoreIcon from '@material-ui/icons/MoreVert'
 import { StylesProvider } from '@material-ui/core/styles'
 import './Navbar.css'
-// import logo from '../../../images/logo.jpg'
 import UAuth from '@uauth/js'
 
 export const Navbar = withRouter(({ connectWallet, walletAddres }) => {
@@ -34,7 +33,6 @@ export const Navbar = withRouter(({ connectWallet, walletAddres }) => {
     clientSecret: 'SQfnxRHmcfdEbUlRN2dCPMkFqKVjcpCbwTW+j6FY6Ro=',
     redirectUri: 'https://nftpixels.netlify.app/callback',
   })
-
   const login = async () => {
     try {
       const authorization = await uauth.loginWithPopup()
@@ -45,6 +43,14 @@ export const Navbar = withRouter(({ connectWallet, walletAddres }) => {
       console.error(error)
     }
   }
+  const logout = () => {
+    console.log('logging out!')
+    uauth.logout().catch((error) => {
+      console.error('profile error:', error)
+    })
+    setUDName('')
+  }
+
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget)
@@ -119,13 +125,7 @@ export const Navbar = withRouter(({ connectWallet, walletAddres }) => {
       </MenuItem>
     </Menu>
   )
-  const logout = () => {
-    console.log('logging out!')
-    uauth.logout().catch((error) => {
-      console.error('profile error:', error)
-    })
-    setUDName('')
-  }
+
 
   const connectZilpay = async (e) => {
     e.preventDefault()

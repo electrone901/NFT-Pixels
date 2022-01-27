@@ -1,47 +1,47 @@
-# NFT Pixels
+# Challenge
 
-## About
+Integrating “Login With Unstoppable” As A Dapp Login Option
+
+# Project name
+
+NFT Pixels
+
+# Description
 
 NFT Pixels is a social dApp built for anyone who loves painting, design, and drawing.
-
 NFT Pixels is an NFT platform where creators and makers can sell their NFTs, as well as create them within our simple online pixel art editor.
 
-Whenever a viewer goes to the app he-she will be able to check NFTs works from the different creators, see details from specific NFT and mint them.
+### Link Demo
 
-# Video Demo Walkthrough
+- https://nftpixels.netlify.app/
 
-https://www.youtube.com/watch?v=WimXwuAgioY
+### Video Demo
 
-# Live Demo
+- https://youtu.be/5cR_bJx0IyA
 
-https://nft-pixels.netlify.app/
+### Person of contact
 
-# Contact Info
-- email: carbajalluis@rocketmail.com
+- Discord ID: electrone#0906
+- UnstoppableDomain registered account email address: carbajalluis@rocketmail.com
 
-# App Features
+# Getting Started with Create React App
 
-[Home Page](https://6119c859fed150c8471f90fd/)
-![Main Page](https://raw.githubusercontent.com/electrone901/NFT-Pixels/main/src/images/create.png)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Overall, users will be able to:
+## Available Scripts
 
-- Check work from different artist
-- Create your own NFT and share it with your friends
-- Mint NFTs
-- Connect your ZilPay wallet
-- Approve transactions to save your NFTs to chain
-- Upload and save your NFTs to NFT.Storage IPFS
-- Post comments
+In the project directory, you can run:
 
-![Main Page](https://raw.githubusercontent.com/electrone901/NFT-Pixels/main/src/images/home.png)
+### `yarn start`
 
-![Main Page](https://raw.githubusercontent.com/electrone901/NFT-Pixels/main/src/images/details.png)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 # How it's made
 
 NFT Pixels dApp makes use of the following software:
 
+- Unstoppable Domain for authentication
 - Deployed smart contracts on the `ide.Zilliqa's test network. Link: https://ide.zilliqa.com/
 - Upload and store files to `IPFS NFTStorage` [IPFS](https://nft.storage/) platform.
 - Build a simple `Scilla` smart contract.
@@ -51,10 +51,6 @@ NFT Pixels dApp makes use of the following software:
 - Build and use `React Js` to create components for single-page applications.
 - `Material-UI` to build faster, beautiful, and more accessible React applications.
 - `Font Awesome` For icons and buttons
-
-## Demo
-
-- [Home Page](https://priceless-darwin-eeb9c6.netlify.app/)
 
 # Getting Started
 
